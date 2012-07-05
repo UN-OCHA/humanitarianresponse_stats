@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Humanitarianresponse Stats feature.
+ */
+
+include_once 'humanitarianresponse_stats.features.inc';
