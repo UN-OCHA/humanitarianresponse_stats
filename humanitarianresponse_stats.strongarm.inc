@@ -13,14 +13,23 @@ function humanitarianresponse_stats_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'piwik_pages';
-  $strongarm->value = 'admin
-admin/*
-batch
-node/add*
-node/*/*
-user/*/*';
-  $export['piwik_pages'] = $strongarm;
+  $strongarm->name = 'piwik_cache';
+  $strongarm->value = 1;
+  $export['piwik_cache'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'piwik_page_title_hierarchy';
+  $strongarm->value = 1;
+  $export['piwik_page_title_hierarchy'] = $strongarm;
+
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'piwik_url_http';
+  $strongarm->value = 'http://stats.humanitarianresponse.info/';
+  $export['piwik_url_http'] = $strongarm;
 
   return $export;
 }
