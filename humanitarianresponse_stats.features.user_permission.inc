@@ -14,9 +14,9 @@ function humanitarianresponse_stats_user_default_permissions() {
   $permissions['access piwik reports'] = array(
     'name' => 'access piwik reports',
     'roles' => array(
-      0 => 'administrator',
-      1 => 'manager',
-      2 => 'editor',
+      'administrator' => 'administrator',
+      'manager' => 'manager',
+      'editor' => 'editor',
     ),
     'module' => 'piwik_reports',
   );
