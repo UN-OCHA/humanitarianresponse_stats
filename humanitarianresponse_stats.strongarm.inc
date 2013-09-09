@@ -44,6 +44,13 @@ function humanitarianresponse_stats_strongarm() {
   $strongarm->name = 'piwik_url_https';
   $strongarm->value = 'https://stats.humanitarianresponse.info/';
   $export['piwik_url_https'] = $strongarm;
+  
+  $strongarm = new stdClass();
+  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
+  $strongarm->api_version = 1;
+  $strongarm->name = 'piwik_reports_url_http';
+  $strongarm->value = 'https://stats.humanitarianresponse.info/';
+  $export['piwik_reports_url_http'] = $strongarm;
 
   return $export;
 }

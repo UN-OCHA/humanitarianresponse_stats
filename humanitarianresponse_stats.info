@@ -15,3 +15,4 @@ features[variable][] = piwik_page_title_hierarchy
 features[variable][] = piwik_reports_token_auth
 features[variable][] = piwik_url_http
 features[variable][] = piwik_url_https
+features[variable][] = piwik_reports_url_http
